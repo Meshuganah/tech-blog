@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3001;
 
 //Imports handlebars
 const exphbs = require('express-handlebars');
-const hbs = exphbs.create({ helpers });
+const hbs = exphbs.create({});
 
 //Session storage import
 const session = require('express-session');
