@@ -51,8 +51,8 @@ router.get('/:id', (req, res) => {
 });
 
 //Creates new user
-//Will not work in a test envirnoment (Insomia, etc) with the req.session section, and the withAuth passed through 
-router.post('/', withAuth,  (req, res) => {
+//Will not work in a test envirnoment (Insomia, etc) with the req.session section
+router.post('/', (req, res) => {
     User.create({
         username: req.body.username,
         email: req.body.email,
@@ -70,7 +70,7 @@ router.post('/', withAuth,  (req, res) => {
 });
 
 //Log in logic
-router.post('/login', withAuth, (req, res) => {
+router.post('/login', (req, res) => {
     User.findOne({
         where: {
             email: req.body.email
