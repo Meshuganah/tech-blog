@@ -14,13 +14,13 @@
 <body>
   <div>
     <header>
-      <h1>
+      <h1 class="m-4">
         <a href="/">Tech Blog</a>
       </h1>
-      <nav>
+      <nav class="m-1  ">
         {{#if loggedIn}}
         <a href="/dashboard">dashboard</a>
-        <button id="logout">Logout</button>
+        <button id="logout" class="btn btn-link">Logout</button>
         {{else}}
         <a href="/login">Login</a>
         {{/if}}
