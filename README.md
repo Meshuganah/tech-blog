@@ -16,4 +16,4 @@ Users may access the live application via a link below, where they may create an
 
 For testing purposes a seed file has currently been left in the project, which users may run from a terminal. They cannot however use the test accounts to log onto the site, as these test users have not had their passwords encrypted, and will not match what the database is comparing when logging users in. 
 
-https://dashboard.heroku.com/apps/mysterious-bayou-64063
+https://mysterious-bayou-64063.herokuapp.com/
